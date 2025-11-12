@@ -27,11 +27,24 @@ This workshop teaches you how to extract text, tables, and structured data from 
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd DIworkshop
+git clone https://github.com/damras/Azure-Document-Intelligence-Labs-.git
+cd Azure-Document-Intelligence-Labs-
 ```
 
-### 2. Set Up Azure Credentials
+### 2. Create Azure Document Intelligence Resource
+
+**📖 Follow the detailed setup guide:** [Azure Setup Guide](Labs/AZURE_SETUP.md)
+
+This guide includes:
+- Step-by-step instructions with screenshots
+- How to create the resource in Azure Portal
+- How to retrieve your credentials
+- Pricing and cost management tips
+- Troubleshooting common issues
+
+**Quick summary:** Create a Document Intelligence resource in Azure Portal, then retrieve your Endpoint and API Key from "Keys and Endpoint."
+
+### 3. Set Up Azure Credentials
 
 Navigate to the `Labs` folder and create a `.env` file:
 
@@ -39,7 +52,7 @@ Navigate to the `Labs` folder and create a `.env` file:
 cd Labs
 ```
 
-Copy `.env.example` to `.env` and fill in your Azure credentials:
+Copy `.env.example` to `.env` and fill in your Azure credentials (from the setup guide above):
 
 ```env
 AZ_DOCINT_ENDPOINT=https://your-resource-name.cognitiveservices.azure.com/

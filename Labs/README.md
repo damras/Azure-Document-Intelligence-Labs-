@@ -134,11 +134,26 @@ This workshop consists of **4 progressive labs** that build on each other, takin
 
 ## 🛠️ Initial Setup (Do This First!)
 
-Before starting Lab 1, you need to set up your environment:
+> **⚠️ IMPORTANT:** Before starting Lab 1, you must create an Azure Document Intelligence resource and configure your credentials.
+
+### 📖 Complete Setup Guide
+
+**Follow this guide first:** [Azure Document Intelligence Service Setup Guide](AZURE_SETUP.md)
+
+This comprehensive guide includes:
+- ✅ Step-by-step Azure Portal instructions with screenshots
+- ✅ How to create the Document Intelligence resource
+- ✅ How to retrieve your Endpoint and API Key
+- ✅ Pricing information and cost management
+- ✅ Troubleshooting common issues
+
+### Quick Setup Summary
+
+Once you've created your Azure resource (see guide above):
 
 ### 1. Azure Resources
-- Create an Azure Document Intelligence resource in the Azure Portal
-- Note your **Endpoint URL** and **API Key**
+- ✅ Azure Document Intelligence resource created in Azure Portal
+- ✅ **Endpoint URL** and **API Key** retrieved from "Keys and Endpoint"
 
 ### 2. Project Structure
 Create the main Labs directory:
@@ -153,6 +168,8 @@ Create a `.env` file in the Labs directory:
 AZ_DOCINT_ENDPOINT=https://<your-resource-name>.cognitiveservices.azure.com/
 AZ_DOCINT_KEY=<your-api-key>
 ```
+
+> **Where to find credentials:** Azure Portal → Your Resource → Keys and Endpoint
 
 ### 4. Python Dependencies
 Create `requirements.txt` in the Labs directory:
