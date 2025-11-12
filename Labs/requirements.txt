@@ -1,0 +1,5 @@
+azure-ai-documentintelligence
+azure-ai-formrecognizer
+azure-core
+numpy
+python-dotenv
