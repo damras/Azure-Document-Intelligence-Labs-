@@ -68,10 +68,15 @@ In the `Labs` directory, create a `requirements.txt` file with the following dep
 
 ```txt
 azure-ai-documentintelligence
+azure-ai-formrecognizer
 azure-core
 python-dotenv
 numpy
 ```
+
+> **Note:** We're installing both Azure SDKs here:
+> - `azure-ai-documentintelligence`: Used in Labs 1 & 2 (Read and Layout models)
+> - `azure-ai-formrecognizer`: Used in Labs 3 & 4 (General Document and Prebuilt models)
 
 Your directory structure should now look like:
 ```
@@ -890,7 +895,7 @@ Continue your learning journey with:
 | `read_batch_demo.py` | Batch processing with raw responses | Multi-format, multi-language, handwriting detection |
 | `data/` | Sample documents | PNG, JPG, PDF files for testing |
 | `.env` | Configuration file | Azure credentials (in parent Labs folder) |
-| `requirements.txt` | Python dependencies | Azure SDK, numpy, dotenv (in parent Labs folder) |
+| `requirements.txt` | Python dependencies | Both Azure SDKs, numpy, dotenv (in parent Labs folder) |
 
 ---
 
